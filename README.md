@@ -1,5 +1,5 @@
 # Music_Ontology
-![image](https://github.com/Nouran-saad/Music_Ontology/assets/55962261/25adce04-c973-4ff2-af7e-299e94086eb5)
+![musicc](https://github.com/Nouran-saad/Music_Ontology/assets/55962261/5308ecb5-b32b-4a84-8545-01cc5a8a60fb)
 ***CSE488 Ontologies and the Semantic Web Project***
 ## Introduction
 Our project is based on a Music Ontology that contains songs, their artists, including the singer
