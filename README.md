@@ -60,7 +60,7 @@ a button to run the query and a table to display the results.
   <img width="30%" height="5%" align= "left" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/ba24161e-2100-4c1c-a14d-b686917a91a6">
   <img width="30%" height="5%" align= "right" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/0f2d2eaf-981c-4cbf-8539-bf5e9398f9ec">
 </p>
-
+\ \
 2. Instances of the Songs
 <p align="center">
   <img width="30%" height="5%"  align= "left" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/fe82d867-68c3-4954-826d-802014689353">
