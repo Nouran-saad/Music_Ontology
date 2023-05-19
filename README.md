@@ -103,3 +103,10 @@ a button to run the query and a table to display the results.
 <img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/822046fa-ef7d-4128-bde4-a4f91873d810">
 </p>
 
+## GUI of Java Script Web App
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/5f813a8b-03aa-497c-b2c3-8ef5287d751d">
+</p>
+
+
+
