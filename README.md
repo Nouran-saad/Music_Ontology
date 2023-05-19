@@ -14,29 +14,29 @@ write a SPARQL query, press execute and see the results of the query displayed i
 a table. We also created a JavaScript web application that contains a text field for the queries,
 a button to run the query and a table to display the results.
 ## CLASSES
-•	Album: To contain the songs.
-•	Award: Given to artists.
-•	Band: To have artists that play songs together.
-•	Instrument: The instruments that the musician will play.
-•	Person: Parent class of Artist, for expansion purposes if wanted to add different type of people that are not artists.
-•	Artist: Parent class of Composer, Musician, Singer, and Writer, which are all considered artists.
-•	Composer: Composes songs.
-•	Musician: Plays instrument.
-•	Singer: Sings the songs.
-•	Writer: Write the song lyrics
-•	Song: The actual song class that has a name, language and other properties discussed in the following sections.
+* Album: To contain the songs.
+*	Award: Given to artists.
+*	Band: To have artists that play songs together.
+*	Instrument: The instruments that the musician will play.
+*	Person: Parent class of Artist, for expansion purposes if wanted to add different type of people that are not artists.
+*	Artist: Parent class of Composer, Musician, Singer, and Writer, which are all considered artists.
+*	Composer: Composes songs.
+*	Musician: Plays instrument.
+*	Singer: Sings the songs.
+*	Writer: Write the song lyrics
+*	Song: The actual song class that has a name, language and other properties discussed in the following sections.
 <img src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/4faeb219-8960-4db4-972b-b5e28d6ec0a2"  width="30%" height="5%" align="right">
 
 
 ## OBJECT PROPERTIES
-•	Composed: connects Composer to Song. 
-•	Contains: connects Album to Song.
-•	hasArtists: connects Band to Artist.
-•	hasAwards: connects Artist to Award.
-•	hasInstruments: connects Song to Instrument.
-•	hasWritten: connects Writer to Song.
-•	Plays: connects Musician to Instrument. 
-•	Sung: connects Band/Singer to Song. 
+*	Composed: connects Composer to Song. 
+*	Contains: connects Album to Song.
+*	hasArtists: connects Band to Artist.
+*	hasAwards: connects Artist to Award.
+*	hasInstruments: connects Song to Instrument.
+*	hasWritten: connects Writer to Song.
+*	Plays: connects Musician to Instrument. 
+*	Sung: connects Band/Singer to Song. 
 ![image](https://github.com/Nouran-saad/Music_Ontology/assets/55962261/d9d132d0-e1a6-4ca8-8741-1357223465dd)
 ## RESTRICTIONS
 1. Each Album contains at least 1 and at most 15 songs.
