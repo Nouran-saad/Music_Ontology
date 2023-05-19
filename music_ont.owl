@@ -1,0 +1,1344 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nourh//"
+     xml:base="http://www.semanticweb.org/nourh//"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/ComposedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/ComposedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Plays -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Plays">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Sung -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Sung">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasArtists -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasArtists">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasAwards -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasAwards">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasInstruments -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasInstruments">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasWritten -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasWritten">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Agent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Agent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Country">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/emotions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/emotions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/language">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/releaseData -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/releaseData">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/timeDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/timeDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/topHits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/topHits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/views -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/views">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Contains"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Contains"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">15</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasAwards"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Sung"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasArtists"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composed"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Plays"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Sung"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasInstruments"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/hasWritten"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Rush_of_Blood_to_the_Head -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Rush_of_Blood_to_the_Head">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks"/>
+        <untitled-ontology-3:name>A Rush of Blood to The Head</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-08-26T07:10:00</untitled-ontology-3:releaseData>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Sky_Full_of_Stars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Sky_Full_of_Stars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/grandPiano"/>
+        <untitled-ontology-3:description>“A Sky Full of Stars” is song about appreciating someone romantically and investing one&apos;s self in that person. This path is not really a metaphor for anything. The lyric emphasizes that the beloved “lights up,” meaning that she is very important and beautiful.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>The emotions conveyed in &quot;A sky full of stars&quot;  is about unconditional love.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Progressive house, alternative rock</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51484</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>A Sky Full of Stars</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-02T10:00:00</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.27</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8170000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#American_Music_Awards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#American_Music_Awards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-05-29T01:50:30</untitled-ontology-3:date>
+        <untitled-ontology-3:name>American Music Awards</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Favorite Pop/Rock Female Artist</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Anothers_Arms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Anothers_Arms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/grandPiano"/>
+        <untitled-ontology-3:description>The song tells the story of one who is missing a loved one, grasping at memories of shared company, while watching TV late at night.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>The emotions conveyed in &quot;Another&apos;s Arms are heartbreak and sadness.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Alternative rock, R&amp;B, electronic</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51480</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Another&apos;s Arms</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-01T09:00:00</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.54</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Arabesque -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Arabesque">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AltoSaxophone"/>
+        <untitled-ontology-3:description>“Arabesque” is about bringing the similarities of people into focus, regardless of language, upbringing, or race. It uses metaphor and abstract imagery to paint a picture of what human beings share with each other: the same blood. The word “Arabesque” has several definitions, but, because of the complex and layered production of the song, the one that probably inspired the title is this one: “a passage or composition with fanciful ornamentation of the melody.”</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>The emotions conveyed in Arabesque are include unity, celebration, connection, and inspiration, creating a vibrant and uplifting experience for the listeners.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Experimental rock, jazz fusion</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18366</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Arabesque</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-24T06:20:00</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.40</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Bass_guitar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Bass_guitar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+        <untitled-ontology-3:name>Bass guitar</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Guitar</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Birthday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Birthday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum"/>
+        <untitled-ontology-3:description>&quot;Birthday&quot; has charted at number 191 on the South Korea Gaon International Chart due to high digital downloads. An accompanying music video for the song was released on July 22, 2013, to coincide with Gomez&apos;s 21st birthday, and features the artist and her friends partying and singing the song in different locations, including an underground nightclub and a dark room.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>&quot;Birthday&quot; has been described as a &quot;party anthem&quot;,[9] with the song exploring topics such as self-entitlement, partying, girl power, and sex appeal.[10][11] Lyrically, the song has been described as risqué, with lyrics such as &quot;blow your dreams, blow your dreams, blow your dreams away&quot;.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Electropunk</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">717177</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Birthday</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-10-19T07:00:00</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.20</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Chris_Gehringer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Chris_Gehringer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Dance_again"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Chris Gehringer</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>American</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>1- Gwen Stefani&apos;s Love. Angel. Music. Baby. (2004),
+2- Rihanna&apos;s Loud (2010), 
+3-Lady Gaga&apos;s Born This Way (2011) and
+4- Drake&apos;s Take Care (2011).</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Chris_Martin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Chris_Martin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Bass_guitar"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Sky_Full_of_Stars"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Arabesque"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Orphans"/>
+        <untitled-ontology-3:Agent>AAE Music</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Chris Martin</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>English</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;I&apos;m A Big Deal, &quot;&quot;Clocks , &quot;&quot;The Scientist,  &quot;&quot;Viva la Vida&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Bass_guitar"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum"/>
+        <untitled-ontology-3:description>“Clocks” is a song by one of the most successful British rock bands of all time Coldplay. The song appears to be about being in a tumultuous, heart-breaking relationship yet being deeply in love while time painfully ticks away. The singer, who can’t seem to conceptualize living without this love, is stricken powerless as all he seems to be able to do is watch as his relationship deteriorates. The song’s main theme is love.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>The emotions conveyed in &quot;Clocks&quot; are heartbreak and love. The lyrics are about being in a conflicted, but very intense relationship as precious time slips away.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Alternative rock ,psychedelic rock</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92676</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Clocks</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-03-17T07:00:00</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.7</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">427000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Coldplay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Coldplay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Sky_Full_of_Stars"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Arabesque"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Chris_Martin"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Guy_Berryman"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Jonny_Buckland"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Will_Champion"/>
+        <untitled-ontology-3:Country>London, United Kingdom</untitled-ontology-3:Country>
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1997-08-04T11:00:00</untitled-ontology-3:date>
+        <untitled-ontology-3:name>Coldplay</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Dance_again -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Dance_again">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/grandPiano"/>
+        <untitled-ontology-3:description>&quot;Dance Again&quot; was scheduled to be used to promote CBS Sports and Turner Sports&apos; coverage of the 2020 NCAA tournament. However, the song was never used, as the tournament was cancelled over concerns of the COVID-19 pandemic.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>Selena sings about not wanting to wait for happiness, and after everything she’s been through, it feels so good to dance again.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Dance,electropop,electrofunk</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">343417</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Dance Again</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-10T11:40:30</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.50</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Everyday_Life -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Everyday_Life">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Arabesque"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Orphans"/>
+        <untitled-ontology-3:name>Everyday Life</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-11-22T10:30:10</untitled-ontology-3:releaseData>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Ghost_Stories -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Ghost_Stories">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Sky_Full_of_Stars"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Anothers_Arms"/>
+        <untitled-ontology-3:name>Ghost Stories</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-16T06:40:15</untitled-ontology-3:releaseData>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Glamour_Beauty_Awards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Glamour_Beauty_Awards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-29T01:50:30</untitled-ontology-3:date>
+        <untitled-ontology-3:name>Glamour Beauty Awards</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Best Makeup Products of the Year</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Gracie_Allen_Award -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Gracie_Allen_Award">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-03-29T01:50:30</untitled-ontology-3:date>
+        <untitled-ontology-3:name>Gracie Allen Award</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Outstanding Female Rising Star in a Comedy Series</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#GrammyAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#GrammyAward">
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-10T09:30:49</untitled-ontology-3:date>
+        <untitled-ontology-3:name>Grammy Award For Song of the Year</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Artistic Award</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Guy_Berryman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Guy_Berryman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Bass_guitar"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#GrammyAward"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Sky_Full_of_Stars"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Arabesque"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Orphans"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Guy Berryman</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>Scottish</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;A Sky Full of Stars, &quot;&quot;In My Place, &quot;&quot;Don&apos;t Panic, &quot;&quot;Clocks, &quot;&quot;Every Teardrop Is a Waterfall ,&quot;&quot;Adventure of a Lifetime&quot;.</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#In_My_Place -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#In_My_Place">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Bass_guitar"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum"/>
+        <untitled-ontology-3:description>The protagonist feels lost and scared, and expresses his feelings in the song. He asks his partner how long he should wait for her. He hopes that his partner will come back and sing for him.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>he emotions conveyed in &quot;In My Place&quot; are a mixture of sadness, longing, hope, and resignation, conveying the complex emotions experienced by the protagonist in their vulnerable state.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Alternative rock</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92671</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>In My Place</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-08-05T11:10:20</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.48</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Jonny_Buckland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Jonny_Buckland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Bass_guitar"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#NMEAward"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Sky_Full_of_Stars"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Arabesque"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Orphans"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Jonny Buckland</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>English</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;In My Place, &quot;&quot;Everyday Life ,&quot;&quot;Fix You ,&quot;&quot;Violet Hill, Talk&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Julia_Michaels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Julia_Michaels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Lose_You_to_Love_Me"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Female</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Julia Michaels</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>American</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>1- Bieber&apos;s &quot;Sorry&quot; 
+2- Gomez&apos;s &quot;Lose You to Love Me&quot;.</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Justin_Tranter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Justin_Tranter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Lose_You_to_Love_Me"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Dance_again"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Justin Tranter</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>American</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>nothing</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Lose_You_to_Love_Me -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Lose_You_to_Love_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/grandPiano"/>
+        <untitled-ontology-3:description>&quot;Lose You to Love Me&quot; received acclaim from music critics, who mostly complimented its lyrical content. &quot;Lose You to Love Me&quot; topped the Billboard Hot 100, becoming Gomez&apos;s first number one song on the chart. Outside of the United States, &quot;Lose You to Love Me&quot; topped the charts in Canada and the Republic of Ireland, and peaked within the top ten of the charts in many countries, including Australia, Belgium, Germany, Malaysia, the Netherlands, New Zealand, Norway, Singapore, Sweden, Switzerland, and the United Kingdom. The song has attained several gold, platinum and multi-platinum certifications worldwide.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>&quot; Lose You to Love Me&quot; is a pop ballad with empowering lyrics about discovering one&apos;s true self through the difficult process of losing a lover.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Pop</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39718</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Lose You to Love Me</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-23T10:14:20</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.26</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">441000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Mike_Del_Rio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Mike_Del_Rio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Birthday"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Birthday"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Mike Del Rio</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>American</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>Lost On You album</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#NMEAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#NMEAward">
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-09-20T06:16:10</untitled-ontology-3:date>
+        <untitled-ontology-3:name>NME Award for Best Album</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Artistic Award</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Orphans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Orphans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Bass_guitar"/>
+        <untitled-ontology-3:description>The two verses tell the fictional story of young girls named Rosaleen and Baba (Arabic for father) who die during the attacks. Baba&apos;s children are left as orphans – &quot;guess we&apos;ll be raised on our own then,&quot; croons Chris Martin on the outro.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>The emotions conveyed in &quot;Orphans&quot; sounds so happy and joyous, yet it has a deeper and darker meaning to it, which actually make it feel more reverent. &quot;Boom&quot; is basically the sound of a bomb, an explosive, or a missile; it&apos;s the sound of war. Taking the sound of war and making it to a catchy part of a song.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Rock</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18480</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Orphans</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-24T05:40:10</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.17</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Rare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Rare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Dance_again"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Lose_You_to_Love_Me"/>
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-10T01:50:30</untitled-ontology-3:date>
+        <untitled-ontology-3:name>Rare</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Selena_Gomez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Selena_Gomez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Birthday"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Dance_again"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Lose_You_to_Love_Me"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#American_Music_Awards"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Glamour_Beauty_Awards"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Gracie_Allen_Award"/>
+        <untitled-ontology-3:Agent>Sara Newkirk Simon</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Female</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Selena Gomez</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>American</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>1-The Heart Wants What It Wants,
+2-Good For You,
+3- Lose You to Love Me</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Stars_Dance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Stars_Dance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Birthday"/>
+        <untitled-ontology-3:name>Stars Dance</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-19T01:50:30</untitled-ontology-3:releaseData>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Will_Champion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Will_Champion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#A_Sky_Full_of_Stars"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Arabesque"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Clocks"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3#Orphans"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Will Champion</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>English</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Viva La Vida&quot; by Coldplay, My Universe&quot; by Coldplay &amp; BTS ,by The Chainsmokers &amp; Coldplay&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AcousticGuitar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AcousticGuitar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+        <untitled-ontology-3:name>Guitar</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Acoustic guitar</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AltoSaxophone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AltoSaxophone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+        <untitled-ontology-3:name>Saxophone</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Alto saxophone</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-09T02:00:00</untitled-ontology-3:date>
+        <untitled-ontology-3:name>American Music Award for Artist of The year</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Artistic award</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:name>BE</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-20T08:30:10</untitled-ontology-3:releaseData>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BTS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BTS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Band"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bang_Si-hyuk"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/David_Stewart"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jessica_Agombar"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jimin"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jin"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jung_Kook"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/RM"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Rob_Grimaldi"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/SUGA"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/V"/>
+        <untitled-ontology-3:hasArtists rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/j-hope"/>
+        <untitled-ontology-3:Country>Seoul, South Korea</untitled-ontology-3:Country>
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-02-13T06:18:00</untitled-ontology-3:date>
+        <untitled-ontology-3:name>BTS</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bang_Si-hyuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bang_Si-hyuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Bang Si-hyuk</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>South Korean</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;I Need U&quot; by BTS, &quot;Blood Sweat &amp; Tears&quot; by BTS, &quot;Spring Day&quot; by BTS, &quot;Boy with Luv&quot; by BTS featuring Halsey</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+        <untitled-ontology-3:name>Drums</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Bass drum</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Award"/>
+        <untitled-ontology-3:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-03-29T01:50:30</untitled-ontology-3:date>
+        <untitled-ontology-3:name>iHeartRadio Music Award for Best Fan Army</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Artistic award</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AcousticGuitar"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum"/>
+        <untitled-ontology-3:description>&quot;Butter&quot; is a fun, upbeat song that celebrates the members&apos; confidence and charisma. The lyrics use food metaphors to describe the members&apos; smooth and butter-like charm, and the song&apos;s catchy melody and playful beat make it a perfect summer anthem.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>The emotions conveyed in &quot;Butter&quot; are confidence, charm, and playfulness. The members&apos; smooth and charismatic vocals, combined with the upbeat tempo and catchy chorus, create a sense of fun and joy that&apos;s hard not to dance along to. The song&apos;s positive energy and celebratory mood make it an uplifting and infectious track.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Dance-pop, disco-pop</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">771118</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Butter</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-21T06:17:10</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.44</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/ButterAlbum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/ButterAlbum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:name>Butter</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-09T08:14:00</untitled-ontology-3:releaseData>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/David_Stewart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/David_Stewart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>David Stewart</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>British</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;What a Man Gotta Do&quot; by Jonas Brothers, &quot;Break My Heart&quot; by Dua Lipa, &quot;Physical&quot; by Dua Lipa, &quot;Watermelon Sugar&quot; by Harry Styles</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/grandPiano"/>
+        <untitled-ontology-3:description>&quot;Dynamite&quot; is a feel-good, upbeat song that uplifts listeners with its positive energy and catchy melody. It was BTS&apos;s first all-English single and was released as a gift to their fans during the COVID-19 pandemic, as a way to spread joy and happiness during a difficult time.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>The emotions conveyed in &quot;Dynamite&quot; are joy, happiness, and a sense of positivity. The lyrics celebrate the small things in life and encourage listeners to find joy in the present moment. The song&apos;s upbeat tempo and catchy chorus make it an infectious anthem that&apos;s hard not to dance along to.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Disco-pop, funk-pop</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55221666</untitled-ontology-3:id>
+        <untitled-ontology-3:language>English</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Dynamite</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-21T11:40:30</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.19</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Song"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AcousticGuitar"/>
+        <untitled-ontology-3:hasInstruments rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AltoSaxophone"/>
+        <untitled-ontology-3:description>&quot;Fake Love&quot; is a powerful, emotional song that explores the pain and disillusionment that can come from a failed relationship. The lyrics describe the feeling of being betrayed by someone you trusted, and the members&apos; vocal performances convey a sense of heartbreak and despair. The song&apos;s haunting melody and intense beat make it a memorable and impactful track.</untitled-ontology-3:description>
+        <untitled-ontology-3:emotions>The emotions conveyed in &quot;Fake Love&quot; are heartbreak, betrayal, and sadness. The lyrics describe the pain of realizing that someone you loved was not who they seemed, and the members&apos; vocal performances capture the raw emotion of that experience. The song&apos;s powerful beat and intense melody create a sense of drama and urgency that amplifies the emotional impact of the track.</untitled-ontology-3:emotions>
+        <untitled-ontology-3:genre>Pop, hip-hop</untitled-ontology-3:genre>
+        <untitled-ontology-3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90191</untitled-ontology-3:id>
+        <untitled-ontology-3:language>Korean</untitled-ontology-3:language>
+        <untitled-ontology-3:name>Fake Love</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-18T10:14:20</untitled-ontology-3:releaseData>
+        <untitled-ontology-3:timeDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.19</untitled-ontology-3:timeDuration>
+        <untitled-ontology-3:views rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">970000000</untitled-ontology-3:views>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jessica_Agombar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jessica_Agombar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Female</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Jessica Agombar</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>British</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;I&apos;ll Be There&quot; by Jess Glynne, &quot;My Love&quot; by Jess Glynne, &quot;Thank You&quot; by MKTO, &quot;Grown&quot; by Little Mix</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jimin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jimin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward"/>
+        <untitled-ontology-3:Agent>HYBE Corporation</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Jimin (Park Jimin)</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>South Korean</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Dynamite,&quot; &quot;Butter,&quot; &quot;Blood Sweat &amp; Tears,&quot; &quot;Spring Day,&quot; &quot;Serendipity&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AcousticGuitar"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward"/>
+        <untitled-ontology-3:Agent>HYBE Corporation</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Jin (Kim Seokjin)</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>South Korean</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Dynamite,&quot; &quot;Butter,&quot; &quot;Blood Sweat &amp; Tears,&quot; &quot;Spring Day,&quot; &quot;Epiphany&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jung_Kook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Jung_Kook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Bass_drum"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward"/>
+        <untitled-ontology-3:Agent>HYBE Corporation</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Jungkook (Jeon Jungkook)</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>South Korean</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Dynamite,&quot; &quot;Butter,&quot; &quot;Blood Sweat &amp; Tears,&quot; &quot;Spring Day,&quot; &quot;Euphoria&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Love_Yourself -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Love_Yourself">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Album"/>
+        <untitled-ontology-3:Contains rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:name>Love Yourself</untitled-ontology-3:name>
+        <untitled-ontology-3:releaseData rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-08-24T03:10:40</untitled-ontology-3:releaseData>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/RM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/RM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward"/>
+        <untitled-ontology-3:Agent>HYBE Corporation</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>RM (Kim Namjoon)</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>South Korean</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Dynamite,&quot; &quot;Butter,&quot; &quot;Blood Sweat &amp; Tears,&quot; &quot;Spring Day,&quot; &quot;Fake Love&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Rob_Grimaldi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Rob_Grimaldi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Composer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Writer"/>
+        <untitled-ontology-3:Composed rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:hasWritten rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Rob Grimaldi</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>American</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Let Me Love You&quot; by DJ Snake featuring Justin Bieber, &quot;God Is a Woman&quot; by Ariana Grande, &quot;Watermelon Sugar&quot; by Harry Styles, &quot;Dynamite&quot; by BTS</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/SUGA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/SUGA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/grandPiano"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward"/>
+        <untitled-ontology-3:Agent>HYBE Corporation</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>Suga (Min Yoongi)</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>Korean</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Dynamite,&quot; &quot;Butter,&quot; &quot;Blood Sweat &amp; Tears,&quot; &quot;Spring Day,&quot; &quot;Daechwita&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/V -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/V">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Musician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <untitled-ontology-3:Plays rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AltoSaxophone"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward"/>
+        <untitled-ontology-3:Agent>HYBE Corporation</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>V (Kim Taehyung)</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>South Korean</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Dynamite,&quot; &quot;Butter,&quot; &quot;Blood Sweat &amp; Tears,&quot; &quot;Spring Day,&quot; &quot;Singularity&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/grandPiano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/grandPiano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Instrument"/>
+        <untitled-ontology-3:name>Piano</untitled-ontology-3:name>
+        <untitled-ontology-3:type>Grand piano</untitled-ontology-3:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/j-hope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/j-hope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Singer"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Butter"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/Dynamite"/>
+        <untitled-ontology-3:Sung rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/FAKE_LOVE"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/AmericanMusicAward"/>
+        <untitled-ontology-3:hasAwards rdf:resource="http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/BestFanArmyAward"/>
+        <untitled-ontology-3:Agent>HYBE Corporation</untitled-ontology-3:Agent>
+        <untitled-ontology-3:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</untitled-ontology-3:age>
+        <untitled-ontology-3:gender>Male</untitled-ontology-3:gender>
+        <untitled-ontology-3:name>J-Hope (Jung Hoseok)</untitled-ontology-3:name>
+        <untitled-ontology-3:nationality>South Korean</untitled-ontology-3:nationality>
+        <untitled-ontology-3:topHits>&quot;Dynamite,&quot; &quot;Butter,&quot; &quot;Blood Sweat &amp; Tears,&quot; &quot;Spring Day,&quot; &quot;Daydream&quot;</untitled-ontology-3:topHits>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
