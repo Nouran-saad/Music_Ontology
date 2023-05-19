@@ -39,8 +39,9 @@ a button to run the query and a table to display the results.
 *	Plays: connects Musician to Instrument. 
 *	Sung: connects Band/Singer to Song. 
 <p align="center">
-  <img width="30%" height="5%" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/d9d132d0-e1a6-4ca8-8741-1357223465dd">
+  <img width="30%" height="5%" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/29114837-0143-493d-84ca-ba74dee411ac">
 </p>
+
 
 ## RESTRICTIONS
 1. Each Album contains at least 1 and at most 15 songs.
