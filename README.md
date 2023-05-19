@@ -100,6 +100,6 @@ a button to run the query and a table to display the results.
 * Button to run the query.
 * Table to display the result of the query. 
 <p align="center">
-<img width="30%" height="5%"  align= "right" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/822046fa-ef7d-4128-bde4-a4f91873d810">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/822046fa-ef7d-4128-bde4-a4f91873d810">
 </p>
 
