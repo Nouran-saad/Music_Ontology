@@ -1,5 +1,5 @@
 # Music_Ontology
-***CSE488 Ontologies and the Semantic Web Project**
+***CSE488 Ontologies and the Semantic Web Project***
 # Introduction
 Our project is based on a Music Ontology that contains songs, their artists, including the singer
 singing, the musician playing the background music, the writer that wrote the lyrics and the
