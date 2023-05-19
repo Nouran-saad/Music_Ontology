@@ -94,7 +94,8 @@ a button to run the query and a table to display the results.
                       <br />
                       <br />
                       <br /> 
-                      
+
+
 ## GUI of the Java Application
 * Text field to write the queries in.
 * Button to run the query.
@@ -147,19 +148,29 @@ a button to run the query and a table to display the results.
 </p>
 
 #### ASK QUERY 1
-Ask if there exists a singer whose name is Selena Gomez , and has award. The award has a name, type and date
+Ask if there exists a singer whose name is Selena Gomez , and has award. The award has a name, type and date.
 <p align="center">
 <img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/318611b3-7271-4f07-9a7c-684ff6364a32">
 </p>
 
 #### ASK QUERY 2
-Ask if there exists a singer whose name is Salma , and has award. The award has a name, type and date
+Ask if there exists a singer whose name is Salma , and has award. The award has a name, type and date.
 <p align="center">
-<img width="40%" height="10%"  align= "center" src="![image](https://github.com/Nouran-saad/Music_Ontology/assets/55962261/68186d0f-9026-4a48-8825-d0b841165eae)">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/68186d0f-9026-4a48-8825-d0b841165eae">
+</p>
+
+#### DESCRIBE QUERY 1
+Describe the awards received by a singer whose name is Selena Gomez .The award has a name, type and date.
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/4aedda68-a213-403d-b2e6-05cda7567e63">
 </p>
 
 
-
+#### DESCRIBE QUERY 2
+Describe the singer who received an award and whose name is Selena Gomez .The award has a name, type and date
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/886ccff5-0c3d-4d2f-b750-fd3ad9436760">
+</p>
 
 
 
