@@ -1,5 +1,5 @@
 # Music_Ontology
-<img src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/5308ecb5-b32b-4a84-8545-01cc5a8a60fb"  width="30%" height="5%">
+<img src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/5308ecb5-b32b-4a84-8545-01cc5a8a60fb"  width="30%" height="5%" align="left">
 
 
 ***CSE488 Ontologies and the Semantic Web Project***
