@@ -26,6 +26,8 @@ a button to run the query and a table to display the results.
 •	Writer: Write the song lyrics
 •	Song: The actual song class that has a name, language and other properties discussed in the following sections.
 <img src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/4faeb219-8960-4db4-972b-b5e28d6ec0a2"  width="30%" height="5%" align="right">
+
+
 ## OBJECT PROPERTIES
 •	Composed: connects Composer to Song. 
 •	Contains: connects Album to Song.
