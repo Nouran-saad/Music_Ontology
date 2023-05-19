@@ -1,0 +1,149 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX m: <http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/>
+
+
+// List the songs(name, genre, views) sung by Selena Gomez ordered by release data and the album that each song belong to
+
+SELECT ?songName ?songGenre ?songViews ?songAlbum ?songDate
+WHERE{
+?singer  rdf:type m:Singer.
+?singer m:name "Selena Gomez".
+?singer m:Sung ?song.
+?song m:name ?songName.
+?song m:genre ?songGenre.
+?song m:views ?songViews.
+?song m:releaseData ?songDate.
+?album m:Contains ?song.
+?album m:name ?songAlbum.
+}
+ORDER BY ?songDate
+
+
+// List the awards taken by Selena Gomez with the date and type
+
+SELECT ?awardName ?type ?date
+WHERE{
+?singer rdf:type m:Singer.
+?singer m:name "Selena Gomez".
+?singer m:hasAwards ?award.
+?award m:name ?awardName.
+?award m:type ?type.
+?award m:date ?date.
+}
+
+// List the songs of the album everyday life or ghost stories with the instrument used in every song.
+
+SELECT ?song ?instrumentName
+WHERE{
+?album rdf:type m:Album.
+{?album m:name "Everyday Life"} UNION
+{?album m:name "Ghost Stories"}
+?album m:Contains ?song.
+?song m:hasInstruments ?inst.
+?inst m:name ?instrumentName.
+} 
+
+
+// List the names and the ages of the members of the band Coldplay and awards if they have.
+
+SELECT ?memberName ?memberAge ?award
+WHERE{
+?band  rdf:type m:Band.
+?band m:name "Coldplay".
+?band m:hasArtists ?member.
+?member m:name ?memberName.
+?member m:age ?memberAge.
+OPTIONAL{?member m:hasAwards ?award.}
+}
+
+
+//list the songs of BTS band that exceed million views and their duration
+
+SELECT ?name ?songViews ?durarion
+WHERE{
+m:BTS rdf:type m:Band.
+m:BTS m:hasArtists ?artist.
+?artist m:Sung ?song.
+?song m:views ?songViews
+FILTER(?songViews > 1000000).
+?song m:name ?name.
+?song m:timeDuration ?durarion.
+}
+
+//List the Ids , names , genre and language of BTS songs
+SELECT  ?ID ?Name ?Genre ?Language
+WHERE{
+?Song rdf:type m:Song.
+m:BTS m:Sung ?Song.
+?Song m:id ?ID.
+?Song m:name ?Name.
+?Song m:genre ?Genre.
+?Song m:language ?Language.
+}
+
+
+//List the artist names , ages and top hits of the BTS band that sung songs.
+
+
+SELECT Distinct ?ArtistName ?ArtistAge ?TopHits
+WHERE{
+?Song rdf:type m:Song.
+?Artist m:Sung ?Song.
+m:BTS m:hasArtists ?Artist.
+?Artist m:Sung ?Song.
+?Artist m:name ?ArtistName.
+?Artist m:age ?ArtistAge.
+?Artist m:topHits ?TopHits.
+}
+
+
+// Ask if there exists a singer whose name is Selena Gomez , and has award. The award has a name, type and date
+
+ASK
+WHERE{
+?singer rdf:type m:Singer.
+?singer m:name "Selena Gomez".
+?singer m:hasAwards ?award.
+?award m:name ?awardName.
+?award m:type ?type.
+?award m:date ?date.
+}
+
+//Ask if there exists a singer whose name is Salma , and has award. The award has a name, type and date
+
+ASK
+WHERE{
+?singer rdf:type m:Singer.
+?singer m:name "Salma".
+?singer m:hasAwards ?award.
+?award m:name ?awardName.
+?award m:type ?type.
+?award m:date ?date.
+}
+
+//Describe the awards received by a singer whose name is Selena Gomez .The award has a name, type and date
+
+
+DESCRIBE ?award
+WHERE{
+?singer rdf:type m:Singer.
+?singer m:name "Selena Gomez".
+?singer m:hasAwards ?award.
+?award m:name ?awardName.
+?award m:type ?type.
+?award m:date ?date.
+}
+
+//Describe the singer who received an award and whose name is Selena Gomez .The award has a name, type and date
+
+DESCRIBE ?singer
+WHERE{
+?singer rdf:type m:Singer.
+?singer m:name "Selena Gomez".
+?singer m:hasAwards ?award.
+?award m:name ?awardName.
+?award m:type ?type.
+?award m:date ?date.
+}
