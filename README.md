@@ -25,6 +25,8 @@ a button to run the query and a table to display the results.
 *	Singer: Sings the songs.
 *	Writer: Write the song lyrics
 *	Song: The actual song class that has a name, language and other properties discussed in the following sections.
+<br />
+<br />
 <img src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/4faeb219-8960-4db4-972b-b5e28d6ec0a2"  width="30%" height="5%" align="right">
 
 
@@ -37,7 +39,9 @@ a button to run the query and a table to display the results.
 *	hasWritten: connects Writer to Song.
 *	Plays: connects Musician to Instrument. 
 *	Sung: connects Band/Singer to Song. 
-![image](https://github.com/Nouran-saad/Music_Ontology/assets/55962261/d9d132d0-e1a6-4ca8-8741-1357223465dd)
+<p align="center">
+  <img width="30%" height="5%" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/d9d132d0-e1a6-4ca8-8741-1357223465dd">
+</p>
 ## RESTRICTIONS
 1. Each Album contains at least 1 and at most 15 songs.
 2. Each Band has at least 2 Artists.
