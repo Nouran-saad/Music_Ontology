@@ -68,6 +68,9 @@ a button to run the query and a table to display the results.
             <br />
               <br />
                 <br />
+                  <br />
+                    <br />
+                      <br />
                 
 ### Instances of the Songs
   <img width="30%" height="5%"  align= "left" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/fe82d867-68c3-4954-826d-802014689353">
