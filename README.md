@@ -120,6 +120,47 @@ a button to run the query and a table to display the results.
 <img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/74450192-8392-41ab-8ac2-f6002f82e9da">
 </p>
 
+3. List the songs of the album everyday life or ghost stories with the instrument used in every song.
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/70d58285-00ea-4e30-8ac6-74c52175657e)">
+</p>
+
+4. List the names and the ages of the members of the band Coldplay and awards if they have.
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/d009e09e-f82d-4174-9ba9-688ff329195f">
+</p>
+
+5. List the songs of BTS band that exceed million views and their duration.
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/b52f0e37-714d-47d1-b0a6-8dfee2fc5b3e">
+</p>
+
+6. List the Ids , names , genre and language of BTS songs.
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/45bd3e86-e4d0-4744-a9dd-9948c7bbd520">
+</p>
+
+
+7. List the artist names , ages and top hits of the BTS band that sung songs.
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/8d47a6e8-ecb4-406b-99c7-1760e0e16703">
+</p>
+
+#### ASK QUERY 1
+Ask if there exists a singer whose name is Selena Gomez , and has award. The award has a name, type and date
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/318611b3-7271-4f07-9a7c-684ff6364a32">
+</p>
+
+#### ASK QUERY 2
+Ask if there exists a singer whose name is Salma , and has award. The award has a name, type and date
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="![image](https://github.com/Nouran-saad/Music_Ontology/assets/55962261/68186d0f-9026-4a48-8825-d0b841165eae)">
+</p>
+
+
+
+
 
 
 
