@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Song Search</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('music.jpg');
+      background-size: 800px 800px;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      border: 2px solid black;
+      margin-top: 7px;
+      background-color: #fff;
+  
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid black;
+    }
+    th {
+      font-weight: bold;
+      background-color: #ddd;
+      text-align: center;
+    }
+
+    #queryInput {
+      width:600px;
+      height: 300px;
+      font-size: 18px;
+      text-align: left;
+      vertical-align: top;
+      margin-right: 20px;
+      margin-top: 30px;
+      
+    }
+
+    .container {
+      margin-top: 0.5px;
+    }
+
+    .scrollable-table {
+        width: 1500px;
+      height: 280px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body class="d-flex justify-content-center align-items-center flex-column">
+  <div class="d-flex justify-content-center align-items-center flex-column" style="height: 100vh">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center flex-row">
+        <textarea spellcheck="false" id="queryInput" class="form-control mb-3" rows="5" placeholder="Enter SPARQL query"></textarea>
+        <button id="Button" class="btn btn-primary">Run Query</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="scrollable-table">
+        <table id="resultsTable">
+          <thead>
+            <tr>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/rdflib/dist/rdflib.min.js"></script>
+
+  <script>
+    const queryInput = document.getElementById('queryInput');
+    const Button = document.getElementById('Button');
+    const resultsTable = document.getElementById('resultsTable');
+
+    /*When the User pressed on the Run query Buttton, then this function is called*/
+    Button.addEventListener('click', () => {
+      // Get the query input value
+      const queryInputValue = queryInput.value.trim();
+      if (!queryInputValue) {
+        alert('Please enter a SPARQL query');
+        return;
+      }
+      //At First, we split the input into lines
+      const lines = queryInputValue.split('\n');
+       /*It initializes an empty array called "prefixes" to store any prefix declarations found in the query input, 
+      and an empty string called "query" to store the main query.*/
+      const prefixes = [];
+      let query = '';
+      /*It loops through each line of the query input and checks if it starts with the keyword "PREFIX" or not. 
+      If it does, it adds the line to the "prefixes" array. If it doesn't, it adds the line to the "query" string.*/
+      for (const line of lines) {
+        if (line.trim().toUpperCase().startsWith('PREFIX')) {
+          prefixes.push(line);
+        } else {
+          query += line + '\n';
+        }
+      }
+      /*If there is no prefixes declarations entered by the user, then the default prefixes will be added to the 
+      prefixes array*/
+      if (prefixes.length === 0) {
+        //Use the default onesss
+        prefixes.push('PREFIX owl: <http://www.w3.org/2002/07/owl#>\n');
+        prefixes.push('PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n');
+        prefixes.push('PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n');
+        prefixes.push('PREFIX ex: <http://www.semanticweb.org/nourh/ontologies/2023/4/untitled-ontology-3/>\n');
+      }
+
+
+      /* Then we will uses the join() method to concatenate the elements of the "prefixes" array into a single string and 
+      concatenate this string with the query string */
+
+      const queryWithPrefixes = prefixes.join('') + query;
+
+     /* To handle the different types of queries, we make a regular expression to retrieve the type of the query*/
+      const queryTypeRegex = /(ASK|SELECT|DESCRIBE)/i;
+      const match = queryTypeRegex.exec(queryInputValue.trim());
+      //Get the First matched String
+      const queryType =  match ? match[1].toUpperCase() : null; 
+
+      //Indicates the location of our server on Apache jena Fureski
+      let endpoint = 'http://localhost:3030/ds/query';
+  
+      /*We used the fetch() function to send a GET request to the server at the URL 
+      "http://localhost:3030/ds/query", where "ds" is the name of the dataset being queried. 
+      The query parameter is added to the URL using template literals, and the "encodeURIComponent()"
+      function is used to encode the query string to ensure it is URL-safe.*/
+      fetch(endpoint + '?query=' + encodeURIComponent(queryWithPrefixes))
+  .then(response => {
+    if (queryType === 'DESCRIBE') {
+      // If the query is a DESCRIBE query, parse the response as text returns a JavaScript object called "data"
+      return response.text();
+    } else {
+      // If the query is a SELECT query, parse the response as JSON and returns a JavaScript object called "data"
+      return response.json();
+    }
+  })
+  .then(data => {
+    if (queryType === 'ASK') {
+      /*Handle ASK query results by getting the value of the boolean variable of json format 
+      and assigned it to result variable*/
+      const result = data.boolean;
+      resultsTable.querySelector('thead tr').innerHTML = '';
+      resultsTable.querySelector('tbody').innerHTML = `<tr><td>${result}</td></tr>`;
+
+    } else if (queryType === 'DESCRIBE') {
+        // Handle DESCRIBE query results
+        try {
+          // Parse the response data as an RDF graph using rdflib.js
+          const store = $rdf.graph();
+          $rdf.parse(data, store, endpoint, 'text/turtle');
+
+          // Get the triples from the graph and construct a table
+           const results = store.statementsMatching();
+           const tableRows = results.map(result => {
+            const subject = result.subject.value;
+            const predicate = result.predicate.value;
+            const object = result.object.value;
+            return `<tr><td>${subject}</td><td>${predicate}</td><td>${object}</td></tr>`;
+          });
+          resultsTable.querySelector('thead tr').innerHTML = '<th>Subject</th><th>Predicate</th><th>Object</th>';
+          resultsTable.querySelector('tbody').innerHTML = tableRows.join('');
+        } catch (error) {
+          // If there was an error parsing the response data as Turtle, log the error and set the data variable to null
+          console.error(error);
+          data = null;
+        }
+      }
+       else {
+      // Handle SELECT query results
+      const results = data.results.bindings;
+      /*the "map()" and "join()" functions are used to transform the results into HTML table rows and cells*/
+      const tableRows = results.map(result => {
+       /*Each row in the table corresponds to a single query result, and each cell in the row corresponds to 
+       a single variable in the SELECT clause.*/
+        const variables = Object.keys(result);
+        const rowCells = variables.map(variable => {
+          return `<td>${result[variable].value}</td>`;
+        });
+        return `<tr>${rowCells.join('')}</tr>`;
+      });
+      const variables = Object.keys(results[0]);
+      const tableHeaders = variables.map(variable => {
+        return `<th>${variable}</th>`;
+      });
+
+      /*the code updates the HTML table in the web application by setting the innerHTML property of the table's <thead>*/
+      resultsTable.querySelector('thead tr').innerHTML = tableHeaders.join('');
+      resultsTable.querySelector('tbody').innerHTML = tableRows.join('');
+    }
+
+    // Return the data variable
+    return data;
+  })
+  .catch(error => console.error(error));
+  
+    });
+
+  </script>
+</body>
+</html>
