@@ -109,4 +109,17 @@ a button to run the query and a table to display the results.
 </p>
 
 
+## SPARQL Queries and Results
+1. List the songs(name, genre, views) sung by Selena Gomez ordered by release data and the album that each song belong to.
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/f23fe008-8252-4b98-b385-473aa7a39a66)">
+</p>
+
+2. List the awards taken by Selena Gomez with the date and type
+<p align="center">
+<img width="40%" height="10%"  align= "center" src="https://github.com/Nouran-saad/Music_Ontology/assets/55962261/74450192-8392-41ab-8ac2-f6002f82e9da">
+</p>
+
+
+
 
