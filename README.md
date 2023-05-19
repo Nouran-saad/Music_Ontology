@@ -90,6 +90,10 @@ a button to run the query and a table to display the results.
                       <br />
                       <br />
                       <br /> 
+                    <br />
+                      <br />
+                      <br />
+                      <br /> 
                       
 ## GUI of the Java Application
 * Text field to write the queries in.
